@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang ="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <title>Point of Sale</title> 
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js"></script>
+    </head>
+    <body> 
+        <div class="container"> 
+            <h1>MEATGUY MART</h1>
+            <div class="input-container"> </div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+        </div>
+        <div class="input-container"> 
+            <label for="date">Date:</label>
+            <input type="date" id="date"> 
+        </div>
+        <div class="input-container"> 
+            <label for="item">Item:</label>
+            <select id="item">
+                <option value="steak">Your steak</option>
+                <option value="human">Human Sin</option>
+                <option value="America">America White</option>
+                <option value="Black">Blacky Gin</option>
+                <option value="Jawir">Jawir Medog</option>
+                <option value="Indian">Indian dots</option>
+                <option value="Air">Papua Water</option>
+        </select> 
+        </div>
+        <div class="input-container"> 
+            <label for="price">Price:</label>
+            <input type="number" id="price" placeholder="Price"> 
+        </div>
+        <div class="input-container"> 
+            <label for="quantity">Quantity:</label> 
+            <input type="number" id="quantity" placeholder="Quantity">
+        </div>
+        <div class="input-container"> 
+            <label for="amount-given">Amount Given:</label>
+            <input type="number" id="amount-given" placeholder="Amount Given"> 
+        </div>
+        <button onclick="addItem()">Add Item</button>
+        <div class="receipt"> 
+            <h2>Receipt</h2>
+            <p>Name: <span id="receipt-name"></span></p>
+            <p>Date: <span id="receipt-date"></span></p>
+            <ul id="receipt-list"></ul>
+            <p>Total: <span id="total">0</span></p>
+            <button onclick="printReceipt()">Print Receipt</button>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+    </div> 
+    </body>
+</html>

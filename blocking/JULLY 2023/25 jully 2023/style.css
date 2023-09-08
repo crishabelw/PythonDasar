@@ -1,0 +1,35 @@
+th{
+    padding: 10px;
+}
+
+td{
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.tabelstyle{
+    font-family: sans-serif;
+    color: #232323;
+    border-collapse: collapse;
+    
+}
+
+.tabelstyle tr th{
+    background: #0772ec;
+}
+
+
+.tabelstyle th, td{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+
+.footerstyle{
+    background: #fff !important;
+    text-align: right;
+}
+
+input{
+    padding: 7px;
+    border-radius: 5px;
+}
